@@ -95,7 +95,77 @@ function updateDeckUI(deckId, activeIndex, images, dots) {
   dots.forEach((dot, idx) => {
     dot.classList.toggle('active', idx === activeIndex);
   });
+
+  const counter = document.getElementById(`${deckId}-counter`);
+  if (counter && images.length) {
+    counter.textContent = `${activeIndex + 1} / ${images.length}`;
+  }
 }
+
+/**
+ * Enable touch swipe & mouse drag navigation on carousel viewports
+ */
+function initCarouselGestures() {
+  ['deckHinge', 'deckTarot'].forEach(deckId => {
+    const container = document.getElementById(deckId);
+    if (!container) return;
+    const viewport = container.querySelector('.image-deck-viewport');
+    if (!viewport) return;
+
+    let startX = 0;
+    let endX = 0;
+    let isDragging = false;
+
+    // Touch events for mobile
+    viewport.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      endX = startX;
+    }, { passive: true });
+
+    viewport.addEventListener('touchmove', (e) => {
+      endX = e.touches[0].clientX;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', () => {
+      const diff = endX - startX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) {
+          navImageDeck(deckId, -1); // swiped right -> previous
+        } else {
+          navImageDeck(deckId, 1);  // swiped left -> next
+        }
+      }
+    });
+
+    // Mouse drag events for desktop sliding
+    viewport.addEventListener('mousedown', (e) => {
+      // Don't drag if clicking buttons
+      if (e.target.closest('.deck-overlay-arrow')) return;
+      isDragging = true;
+      startX = e.clientX;
+      endX = startX;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      endX = e.clientX;
+    });
+
+    window.addEventListener('mouseup', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      const diff = endX - startX;
+      if (Math.abs(diff) > 45) {
+        if (diff > 0) {
+          navImageDeck(deckId, -1);
+        } else {
+          navImageDeck(deckId, 1);
+        }
+      }
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', initCarouselGestures);
 
 /* -------------------------------------------------------------
  * 4. Universal Lightbox (For Full-Res Slide & LinkedIn Zoom)
