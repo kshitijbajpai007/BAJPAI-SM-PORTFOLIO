@@ -246,8 +246,22 @@ function initSmoothScroll() {
 
 
 /* -------------------------------------------------------------
- * 9. Native Reel Video Player (Reel 2 Fix)
+ * 10. Gully Labs × Eluno Collab Deck Tab Switcher
  * ----------------------------------------------------------- */
+function switchGullyTab(tabKey) {
+  const tabButtons = document.querySelectorAll('.deck-tab-btn');
+  const panels = document.querySelectorAll('.deck-tab-panel');
+
+  tabButtons.forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${tabKey}'`));
+  });
+
+  panels.forEach(panel => {
+    panel.classList.toggle('active', panel.id === `gullyTab-${tabKey}`);
+  });
+}
+window.switchGullyTab = switchGullyTab;
+
 function toggleNativeReel() {
   const video = document.getElementById('reelNativeVideo');
   const overlay = document.getElementById('nativePlayOverlay');

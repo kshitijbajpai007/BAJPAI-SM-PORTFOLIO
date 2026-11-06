@@ -92,11 +92,10 @@
           <span class="title-sub">Content Strategist · Social Media Marketing · Copywriting</span>
           <span class="title-highlight">
             <span class="ornament-l">ॐ</span>
-            Engineering Precision
+            Kshitij Bajpai
             <span class="ornament-r">ॐ</span>
           </span>
-          <span class="title-connector">&amp;</span>
-          <span class="title-display">Indian Maximalist Cultural Voice.</span>
+          <span class="title-display">क्षितिज बाजपाई</span>
         </h1>
 
         <p class="hero-description">
@@ -107,23 +106,6 @@
           detail;
           sharp cultural instincts and an authentic voice shape everything I write.
         </p>
-
-        <!-- Hero quick proof chips removed as requested -->
-
-        <div class="hero-cta-group">
-          <a href="#experience" class="btn btn-primary-maximalist">
-            <span>VIEW WORK EXPERIENCE</span>
-            <span class="arrow-symbol">↓</span>
-          </a>
-          <a href="#published-works" class="btn btn-secondary-maximalist">
-            <span class="btn-icon">⚡</span>
-            <span>EXCESS AI &amp; PUBLISHED PROOFS</span>
-          </a>
-          <button class="btn btn-ghost-maximalist" id="openMoodboardBtn"
-            title="View the Indian Maximalism inspiration board">
-            <span>🎨 Visual Moodboard</span>
-          </button>
-        </div>
 
         <!-- Subtle Skills Strip on Hero Banner -->
         <div class="hero-skills-strip">
@@ -2369,51 +2351,327 @@
           </div>
         </div>
 
-        <!-- CONCEPT SUB-SECTION 3: SAAS CONVERSION COPY SPECIMEN -->
-        <div class="concept-block matchbox-border">
+        <!-- CONCEPT SUB-SECTION 4: MOCK CAMPAIGN BRAND DECK (GULLY LABS X ELUNO) -->
+        <div class="concept-block matchbox-border" id="concept-brand-deck">
           <div class="concept-block-header">
-            <span class="concept-tag green-tag">CONCEPT ०४ · CONVERSION TEARDOWN</span>
-            <h3>B2B SaaS Conversion Copy Specimen</h3>
-            <p>A strategic rewrite transforming dense, feature-centric tech jargon into high-converting, benefit-driven
-              messaging.</p>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <span class="concept-tag blue-tag">CONCEPT ०४ · MOCK BRAND COLLAB DECK</span>
+                <h3>Through the Gully Lens: Gully Labs × Eluno</h3>
+                <p>A full 360° cross-category collaboration strategy connecting Indian streetwear (Delhi) with high-concept design eyewear (Bengaluru).</p>
+              </div>
+              <div class="deck-download-wrapper">
+                <a href="assets/gully-labs-x-eluno-campaign-deck.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-maximalist" style="font-size: 0.82rem; padding: 0.5rem 1rem;">
+                  <span>📄 Open Full Deck (PDF)</span>
+                  <span class="arrow-symbol">↗</span>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="saas-concept-comparison">
-            <div class="saas-col before-col">
-              <span class="saas-badge before-badge">❌ BEFORE: GENERIC FEATURE BLOAT</span>
-              <div class="saas-mockup">
-                <h5>"Enterprise Autonomous Multi-Agent Orchestration Middleware Platform"</h5>
-                <p>
-                  "Deploy cognitive AI workers across cross-functional distributed infrastructure with synchronous
-                  vector embeddings, end-to-end telemetry pipelines, and enterprise-grade SLA compliance."
-                </p>
-                <div class="critique-list">
-                  <div class="critique-item">⚠️ <strong>Zero Clarity:</strong> Fails the 5-second stranger test; uses 8
-                    buzzwords in one sentence.</div>
-                  <div class="critique-item">⚠️ <strong>Me-Centric:</strong> Talks about system mechanics instead of
-                    customer headaches.</div>
+          <!-- Interactive Slide Deck Viewer -->
+          <div class="gully-deck-card">
+            <!-- Top Deck Header Banner -->
+            <div class="deck-hero-banner">
+              <div class="deck-hero-left">
+                <span class="deck-tagline-kicker">MOCK CAMPAIGN DECK · 2026</span>
+                <h4 class="deck-hero-title">THROUGH THE GULLY LENS</h4>
+                <p class="deck-hero-sub">Gully Labs (Delhi Footwear &amp; Culture) × Eluno (Bengaluru Design Eyewear)</p>
+                <div class="deck-hero-meta">
+                  <span>Presented by <strong>Kshitij Bajpai</strong></span>
+                  <span class="meta-dot">✦</span>
+                  <span>72-Hour Dual-City Collab Drop</span>
+                </div>
+              </div>
+              <div class="deck-hero-stats">
+                <div class="d-stat-pill">
+                  <strong>6,000+</strong>
+                  <small>Target In-Store Footfall</small>
+                </div>
+                <div class="d-stat-pill">
+                  <strong>50K+</strong>
+                  <small>Projected Online Footfall</small>
+                </div>
+                <div class="d-stat-pill">
+                  <strong>1,500+</strong>
+                  <small>Target Bundles Sold</small>
                 </div>
               </div>
             </div>
 
-            <div class="saas-col after-col">
-              <span class="saas-badge after-badge">✅ AFTER: HIGH-CONVERSION POSITIONING</span>
-              <div class="saas-mockup highlight-mockup">
-                <h5>"Give your top engineers their weekends back. Automate the 40 hours of grunt work."</h5>
-                <p>
-                  "Stop wasting high-salary engineering hours on manual log audits, data reconciliations, and ticket
-                  triage.
-                  Connect your stack in 4 minutes, let intelligent background workers handle the repetition, and ship 2x
-                  faster."
-                </p>
-                <div class="critique-list">
-                  <div class="critique-item">🎯 <strong>Emotional Payoff:</strong> Connects directly to engineer burnout
-                    and engineering budget ROI.</div>
-                  <div class="critique-item">🎯 <strong>Frictionless Proof:</strong> "Connect in 4 minutes" removes high
-                    integration hesitation.</div>
+            <!-- Strategic Tab Navigation -->
+            <div class="deck-tab-bar" id="deckTabBar">
+              <button class="deck-tab-btn active" onclick="switchGullyTab('strategy')">1. The Pitch &amp; Brand Synergy</button>
+              <button class="deck-tab-btn" onclick="switchGullyTab('drops')">2. Limited Collab Drops (The Pairings)</button>
+              <button class="deck-tab-btn" onclick="switchGullyTab('activation')">3. 72-Hour Activation &amp; Content Arc</button>
+              <button class="deck-tab-btn" onclick="switchGullyTab('roadmap')">4. Timeline &amp; Risk Mitigation</button>
+            </div>
+
+            <!-- TAB 1: THE BRANDS & SYNERGY -->
+            <div class="deck-tab-panel active" id="gullyTab-strategy">
+              <div class="deck-two-col-grid">
+                <div class="brand-synergy-card matchbox-border">
+                  <div class="synergy-header gully-side">
+                    <span class="brand-badge-pill">DELHI STREETWEAR</span>
+                    <h4>Gully Labs</h4>
+                    <span class="synergy-since">EST. 2023</span>
+                  </div>
+                  <div class="synergy-body">
+                    <p class="synergy-lead">One of India’s most trusted new sneaker voices, founded to bring the <em>Desiness</em> of Indian footwear to the limelight.</p>
+                    <ul class="synergy-points">
+                      <li><strong>Footprint:</strong> Digital-heavy with a flagship experience store in Delhi. Minimal physical presence in Bengaluru.</li>
+                      <li><strong>Past Collabs:</strong> Fashion designers like Sagal Singh, legacy giants like Royal Enfield.</li>
+                      <li><strong>The Opportunity:</strong> No eyewear collaboration done yet; primed for an explosive South India footprint.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="brand-synergy-card matchbox-border">
+                  <div class="synergy-header eluno-side">
+                    <span class="brand-badge-pill">BENGALURU DESIGN</span>
+                    <h4>Eluno Eyewear</h4>
+                    <span class="synergy-since">EST. 2025</span>
+                  </div>
+                  <div class="synergy-body">
+                    <p class="synergy-lead">A design-first premium eyewear brand making waves in Bengaluru with avant-garde aesthetics and architectural frames.</p>
+                    <ul class="synergy-points">
+                      <li><strong>Footprint:</strong> Strong foothold with 3 physical stores in Bengaluru, but limited touchpoints outside the IT hub.</li>
+                      <li><strong>Past Collabs:</strong> Early-stage startup with fresh seasonal drops (recent Summer Collection) but zero designer cross-collabs.</li>
+                      <li><strong>The Opportunity:</strong> Instant cultural credibility and national reach by tapping into Gully Labs' die-hard sneakerhead cult.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="collab-thesis-banner">
+                <span class="thesis-kicker">THE STRATEGIC THESIS</span>
+                <h5>"Why These Two? Reciprocity Made Physical."</h5>
+                <p>Gully Labs unlocks physical penetration in South India (Bengaluru) through Eluno's retail footprint. In return, Eluno penetrates North India's style capital (Delhi) via Gully Labs' high-traffic Experience Store. Both cater to the modern Indian style-conscious consumer who demands homegrown authenticity.</p>
+              </div>
+            </div>
+
+            <!-- TAB 2: SPECIAL COLLAB DROPS -->
+            <div class="deck-tab-panel" id="gullyTab-drops">
+              <div class="product-pairings-grid">
+                <!-- Pairing 1 -->
+                <div class="pairing-card matchbox-border nifty-neel-card">
+                  <div class="pairing-badge-row">
+                    <span class="pairing-num-pill">DROP ०१</span>
+                    <span class="pairing-mood-tag">Y2K RETRO-FUTURISM</span>
+                  </div>
+                  <h4 class="pairing-title">NIFTY NEEL</h4>
+                  <p class="pairing-tagline">"Y2K Retro-Futurism From Head to Toe."</p>
+
+                  <div class="pairing-items-showcase">
+                    <div class="paired-item">
+                      <span class="item-role">KICKS (GULLY LABS)</span>
+                      <strong>Gully No. 001 · Baaz Baadal Blue</strong>
+                      <p>Layered retro-running silhouette in cool grey mesh, off-white overlays, and soft blue accents that demand a double-take.</p>
+                    </div>
+                    <div class="pairing-plus">+</div>
+                    <div class="paired-item">
+                      <span class="item-role">EYEWEAR (ELUNO)</span>
+                      <strong>Eluno Sloan Grey</strong>
+                      <p>Transparent, smoky-grey acetate frame with solid grey lenses. Grounds the Y2K palette and stands apart in any crowd.</p>
+                    </div>
+                  </div>
+
+                  <div class="pairing-aesthetic-note">
+                    <strong>Styling Archetype:</strong> Day parties, electronic music venues, tech founders with edge, and Bengaluru Sunday brunches.
+                  </div>
+                </div>
+
+                <!-- Pairing 2 -->
+                <div class="pairing-card matchbox-border bheeshan-black-card">
+                  <div class="pairing-badge-row">
+                    <span class="pairing-num-pill">DROP ०२</span>
+                    <span class="pairing-mood-tag">POWER LUXURY</span>
+                  </div>
+                  <h4 class="pairing-title">BHEESHAN BLACK</h4>
+                  <p class="pairing-tagline">"Step Up, Scan the Room, and Own It."</p>
+
+                  <div class="pairing-items-showcase">
+                    <div class="paired-item">
+                      <span class="item-role">SLIDES (GULLY LABS)</span>
+                      <strong>Gully No. 004 · Koyar Black</strong>
+                      <p>Handcrafted rich Indian leather slide engineered with heritage detailing and rugged street durability.</p>
+                    </div>
+                    <div class="pairing-plus">+</div>
+                    <div class="paired-item">
+                      <span class="item-role">FRAMES (ELUNO)</span>
+                      <strong>Eluno Lorenzo Black</strong>
+                      <p>High-gloss bold geometric square frames built from heavy-weight acetate for an authoritative, cinematic profile.</p>
+                    </div>
+                  </div>
+
+                  <div class="pairing-aesthetic-note">
+                    <strong>Styling Archetype:</strong> Speakeasy lounges, midnight art pop-ups, pitch meetings, and confident evening streetwear.
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- TAB 3: ACTIVATION & CONTENT ARSENAL -->
+            <div class="deck-tab-panel" id="gullyTab-activation">
+              <div class="activation-architecture">
+                <div class="activation-timeline-box matchbox-border">
+                  <h4 class="sub-heading-maximalist">The 72-Hour Pop-Up Vault Mechanism</h4>
+                  <div class="vault-days-grid">
+                    <div class="v-day-col">
+                      <span class="v-day-tag">DAYS 1 &amp; 2</span>
+                      <h5>Reciprocal Vault Takeovers</h5>
+                      <p>Eluno’s polished Bengaluru storefront converts into a raw streetwear vault. Simultaneously, a dedicated Eluno fixture installs inside the Delhi Gully Labs Store.</p>
+                      <div class="v-perk-badge">🎁 First 10 Buyers get free on-site customization on kicks/frames</div>
+                    </div>
+                    <div class="v-day-col">
+                      <span class="v-day-tag">DAY 3</span>
+                      <h5>The Mystery Perks Card Draw</h5>
+                      <p>First 20 people in the physical line draw a card revealing instant perks: up to 15% off + future vouchers for both brands.</p>
+                      <div class="v-perk-badge">⚡ Synchronous Online &amp; In-Store Drop at fixed hour</div>
+                    </div>
+                    <div class="v-day-col">
+                      <span class="v-day-tag">AFTERMATH</span>
+                      <h5>Vault Closes &amp; Archive Lock</h5>
+                      <p>Collab items enter the official brand archive to maintain extreme scarcity. Establishes Gully Labs firmly into <em>Namma Bengaluru</em> culture.</p>
+                      <div class="v-perk-badge">🔒 Drop archival protects street hype &amp; secondary resale value</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-pillars-box">
+                  <h4 class="sub-heading-maximalist">Multi-Channel Content Rollout Plan</h4>
+                  <div class="content-matrix-grid">
+                    <div class="c-matrix-card">
+                      <div class="matrix-header">
+                        <span class="matrix-icon">📱</span>
+                        <strong>Instagram Carousels</strong>
+                      </div>
+                      <p>Side-by-side product-pairing reveals: swipe from the footwear silhouette directly into the eyewear texture, styled as one coherent look.</p>
+                    </div>
+                    <div class="c-matrix-card">
+                      <div class="matrix-header">
+                        <span class="matrix-icon">🎬</span>
+                        <strong>Macro Reels (15–25s)</strong>
+                      </div>
+                      <p>High-contrast ASMR macro loops: hand-polished Italian acetate striking against rich full-grain leather, edited to hard phonk &amp; Indian beat drops.</p>
+                    </div>
+                    <div class="c-matrix-card">
+                      <div class="matrix-header">
+                        <span class="matrix-icon">⏳</span>
+                        <strong>Cryptic Stories Arc</strong>
+                      </div>
+                      <p>72-hour countdown stickers, coordinate-only teases, and zero links or discount codes. Pure anticipation built on FOMO and secret locations.</p>
+                    </div>
+                    <div class="c-matrix-card">
+                      <div class="matrix-header">
+                        <span class="matrix-icon">👥</span>
+                        <strong>Street Team &amp; UGC Loops</strong>
+                      </div>
+                      <p>Regramming the actual queues in Indiranagar and Hauz Khas. The queue energy and first-in-line unboxing reactions become the organic viral loop.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 4: TIMELINE & RISK MATRIX -->
+            <div class="deck-tab-panel" id="gullyTab-roadmap">
+              <div class="roadmap-grid">
+                <div class="timeline-stepper matchbox-border">
+                  <h4 class="sub-heading-maximalist">10-Week Execution Roadmap</h4>
+                  <div class="stepper-list">
+                    <div class="step-item">
+                      <div class="step-num">W1-3</div>
+                      <div class="step-details">
+                        <strong>Finalization &amp; Vault Locks</strong>
+                        <p>Lock down inventory allocation between drops, pricing parity, and secure the reciprocal retail spaces in Bengaluru &amp; Delhi.</p>
+                      </div>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-num">W4-6</div>
+                      <div class="step-details">
+                        <strong>Production &amp; Creative Assets</strong>
+                        <p>Shoot macro teaser films and high-fashion product photography for both pairings. Build out complete Instagram calendar.</p>
+                      </div>
+                    </div>
+                    <div class="step-item">
+                      <div class="step-num">W7-9</div>
+                      <div class="step-details">
+                        <strong>Seeding &amp; 3-Week Teaser Arc</strong>
+                        <p>Influencer seeding to underground creators; finalize queue wristbands, security protocol, and retail signage.</p>
+                      </div>
+                    </div>
+                    <div class="step-item highlight-step">
+                      <div class="step-num">W10</div>
+                      <div class="step-details">
+                        <strong>Activation (72-Hour Vault Drop)</strong>
+                        <p>Continuous dual-city activation. Day 1 gates open; Day 3 gates close permanently with live queue social coverage.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="risk-matrix-box matchbox-border">
+                  <h4 class="sub-heading-maximalist">Strategic Risk &amp; Mitigation Protocol</h4>
+                  <div class="risk-grid">
+                    <div class="risk-card">
+                      <div class="risk-head">
+                        <span class="risk-type">INVENTORY RISK</span>
+                        <strong>Stock Split Disparity</strong>
+                      </div>
+                      <p><strong>Risk:</strong> One city sells out in hours while another retains stock, frustrating loyal fans.</p>
+                      <p class="mitigation-line"><strong>Mitigation:</strong> Strict per-site quotas based on footfall data + dedicated manual transfer protocol between sites.</p>
+                    </div>
+
+                    <div class="risk-card">
+                      <div class="risk-head">
+                        <span class="risk-type">EXECUTION RISK</span>
+                        <strong>Dual-City Chaos</strong>
+                      </div>
+                      <p><strong>Risk:</strong> 3-day simultaneous takeover across cities creates operational hiccups and queue bottlenecks.</p>
+                      <p class="mitigation-line"><strong>Mitigation:</strong> Unified on-site staff playbook rehearsed 48 hours in advance; locked security and wristband gating.</p>
+                    </div>
+
+                    <div class="risk-card">
+                      <div class="risk-head">
+                        <span class="risk-type">BRAND RISK</span>
+                        <strong>Mood Fragmentation</strong>
+                      </div>
+                      <p><strong>Risk:</strong> Retro-futuristic blue sneaker vs luxury black slide may dilute brand narrative.</p>
+                      <p class="mitigation-line"><strong>Mitigation:</strong> Pre-approved dual campaign identities—each drop given its own dedicated teaser day and aesthetic mood.</p>
+                    </div>
+
+                    <div class="risk-card">
+                      <div class="risk-head">
+                        <span class="risk-type">COORDINATION RISK</span>
+                        <strong>Real-Time Stock Sync</strong>
+                      </div>
+                      <p><strong>Risk:</strong> Online store overselling physical inventory during synchronous drops.</p>
+                      <p class="mitigation-line"><strong>Mitigation:</strong> 15-minute staff-only internal sync dashboard keeping physical managers and e-commerce lead aligned.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Action Strip -->
+            <div class="deck-bottom-action">
+              <div class="deck-action-text">
+                <strong>Interested in full campaign architecture like this?</strong>
+                <span>From brand synthesis and retail activations to product-pairing copy and drop timelines.</span>
+              </div>
+              <div class="deck-action-buttons">
+                <a href="assets/gully-labs-x-eluno-campaign-deck.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-maximalist">
+                  <span>📄 View Original PDF</span>
+                  <span class="arrow-symbol">↗</span>
+                </a>
+                <a href="#contact" class="btn btn-primary-maximalist">
+                  <span>LET'S BUILD A CAMPAIGN</span>
+                  <span class="arrow-symbol">↓</span>
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -2511,6 +2769,10 @@
       <div class="footer-bottom-row">
         <p>© 2026 Kshitij Bajpai (क्षितिज बाजपाई). All rights reserved.</p>
         <div class="footer-links">
+          <button class="btn btn-ghost-maximalist btn-footer-moodboard" id="openMoodboardBtn"
+            title="View the Indian Maximalism inspiration board">
+            <span>🎨 Visual Moodboard</span>
+          </button>
           <a href="#hero">Back to Top ↑</a>
           <a href="mailto:rickrolledrum@gmail.com">Get in Touch</a>
         </div>
